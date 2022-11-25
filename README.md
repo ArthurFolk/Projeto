@@ -1,4 +1,4 @@
-# Projeto
+# Projeto baseado em linguagem C
 Projeto para a matéria de programação avançada
 
 1) Informar em qual das três posições colocadas está o maior número.
@@ -27,15 +27,20 @@ int main()
 
 int main()
 {
+    // Váriaveis
     float salFixo, vendas, salTotal;
+    //entrada
     printf("Digite o seu salário fixo: ");
     scanf("%f", &salFixo);
     printf("Digite o valor das vendas: ");
     scanf("%f", &vendas);
+    //processamento
     if (vendas > 1500)
-    salTotal = 1500 * 3 / 100 + (vendas - 1500) * 5 / 100;
-    else
+     salTotal = 1500 * 3 / 100 + (vendas - 1500) * 5 / 100;
+   
+   else
     salTotal = 1500 * 3 / 100;
+    //Saída
     salTotal = salTotal + salFixo;
     printf("%0.3f", salTotal);
 
